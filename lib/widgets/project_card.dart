@@ -47,18 +47,18 @@ class ProjectCard extends StatelessWidget {
                 const SizedBox(height: 8.0),
                 Text(description),
                 const SizedBox(height: 8.0),
-                ElevatedButton(
-                  onPressed: () async {
-                    // coba buka link proyek
-                    if (await canLaunchUrlString(projectUrl)) {
-                      await launchUrlString(projectUrl);
-                    } else {
-                      // tampilkan error apabila tidak berhasil
-                      throw 'Could not launch $projectUrl';
-                    }
-                  },
-                  child: const Text('View Project'),
-                ),
+                // ElevatedButton(
+                //   onPressed: () async {
+                //     // coba buka link proyek
+                //     if (await canLaunchUrlString(projectUrl)) {
+                //       await launchUrlString(projectUrl);
+                //     } else {
+                //       // tampilkan error apabila tidak berhasil
+                //       throw 'Could not launch $projectUrl';
+                //     }
+                //   },
+                //   child: const Text('View Project'),
+                // ),
               ],
             ),
           ),
